@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personaliza tu Especiero</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Título -->
+    <h1><span class="remarcar-palabra">personaliza</span> tu especiero</h1>
+
+    <!-- Imagen de referencia, visualización y instrucciones -->
+    <section>
+        <div>
+            <img src="img/especiero-sinfondo.png" alt="Especiero de referencia" width="800">
+        </div>
+        <h3><span class="remarcar-palabra">Visualiza</span> tu especiero:</h3>
+        <canvas id="especieroCanvas" width="900" height="190"></canvas>
+    </section>
+
+    <!-- Selector de Color del Especiero y Etiquetas -->
+    <section class="color-options-container">
+        <div class="color-option">
+            <h3><span class="remarcar-palabra">Selecciona</span> Color del Especiero:</h3>
+            <input type="color" id="colorEspeciero" name="colorEspeciero" value="#8B4513">
+        </div>
+
+        <!-- Opción para aplicar el mismo color a todas las etiquetas -->
+        <div class="color-option">
+            <h3>Color de Todas las Etiquetas:</h3>
+            <div class="alinear-opciones-etiquetas">
+                <input type="checkbox" id="mismoColor" name="mismoColor"> Usar el mismo color para todas las etiquetas
+                <input type="color" id="colorTodasEtiquetas" value="#FFD700"> Selecciona el color de todas las etiquetas
+            </div>
+        </div>
+    </section>
+
+    <!-- Nueva Frase: Agregue el nombre de sus condimentos -->
+    <section>
+        <p class="agregar-nombres-condimentos"><span class="remarcar-palabra">Agrega</span> el nombre de sus condimentos a continuación:</p>
+    </section>
+
+    <!-- Contenedor de los frascos para que queden en una línea -->
+    <section class="frascos-container">
+        <div class="frasco" id="frasco1">
+            <p>Frasco 1: <input type="text" id="nombreFrasco1" placeholder="Nombre condimento"></p>
+            <p>Color etiqueta: <input type="color" id="colorEtiqueta1" value="#FFD700"></p>
+        </div>
+        <div class="frasco" id="frasco2">
+            <p>Frasco 2: <input type="text" id="nombreFrasco2" placeholder="Nombre condimento"></p>
+            <p>Color etiqueta: <input type="color" id="colorEtiqueta2" value="#FFD700"></p>
+        </div>
+        <div class="frasco" id="frasco3">
+            <p>Frasco 3: <input type="text" id="nombreFrasco3" placeholder="Nombre condimento"></p>
+            <p>Color etiqueta: <input type="color" id="colorEtiqueta3" value="#FFD700"></p>
+        </div>
+        <div class="frasco" id="frasco4">
+            <p>Frasco 4: <input type="text" id="nombreFrasco4" placeholder="Nombre condimento"></p>
+            <p>Color etiqueta: <input type="color" id="colorEtiqueta4" value="#FFD700"></p>
+        </div>
+        <div class="frasco" id="frasco5">
+            <p>Frasco 5: <input type="text" id="nombreFrasco5" placeholder="Nombre condimento"></p>
+            <p>Color etiqueta: <input type="color" id="colorEtiqueta5" value="#FFD700"></p>
+        </div>
+        <div class="frasco" id="frasco6">
+            <p>Frasco 6: <input type="text" id="nombreFrasco6" placeholder="Nombre condimento"></p>
+            <p>Color etiqueta: <input type="color" id="colorEtiqueta6" value="#FFD700"></p>
+        </div>
+    </section>
+
+    <!-- Instrucciones al final y botón para imprimir -->
+    <section class="instrucciones-container">
+        <h3 class="instrucciones-titulo">INSTRUCCIONES:</h3>
+        <p class="instrucciones-texto">
+            Haz una captura/descarga de pantalla cuando hayas terminado de personalizar tu especiero y envíala a: 
+            <strong>pedidos@tuespeciero.com</strong>. Verifica que todo esté correcto antes de enviarla.
+        </p>
+        <button onclick="window.print()">Descargar PDF / Imprimir</button>
+    </section>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
