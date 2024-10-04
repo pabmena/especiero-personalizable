@@ -2,6 +2,8 @@
 body {
     font-family: Arial, sans-serif;
     text-align: center;
+    margin: 0;
+    padding: 0;
 }
 
 /* Mantener un margen general para las secciones */
@@ -63,7 +65,7 @@ section.frascos-container {
     gap: 10px;
 }
 
-/* Estilo del canvas, ajustado para un 20% menos en altura */
+/* Estilo del canvas */
 canvas {
     border: 1px solid #FFF; /* Borde blanco alrededor */
     display: block;
@@ -108,6 +110,48 @@ button {
 button:hover {
     background-color: #a32e39;
 }
+
+/* --- Estilos para pantallas pequeñas (responsive) --- */
+@media only screen and (max-width: 767px) {
+    h1 {
+        font-size: 24px; /* Texto más pequeño para pantallas pequeñas */
+    }
+
+    .color-options-container, .frascos-container {
+        flex-direction: column; /* Coloca las opciones una debajo de la otra */
+        gap: 10px;
+    }
+
+    .frasco {
+        width: 90%; /* Ocuparán el 90% del ancho de la pantalla */
+        margin: 0 auto; /* Centra los frascos */
+    }
+
+    .instrucciones-container {
+        flex-direction: column; /* Coloca las instrucciones y el botón uno debajo del otro */
+        gap: 10px;
+    }
+
+    button {
+        width: 100%; /* El botón ocupará todo el ancho disponible */
+    }
+}
+
+/* Estilos para pantallas grandes (escritorio) */
+@media only screen and (min-width: 768px) {
+    .color-options-container {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .frascos-container {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+    }
+}
+
 
 
 
